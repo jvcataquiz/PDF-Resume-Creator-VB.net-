@@ -25,35 +25,35 @@ Partial Class PDFResumeCreator
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(PDFResumeCreator))
         Me.ButtonPoweroff = New System.Windows.Forms.Button()
         Me.LabelTitle = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.TextBoxFullname = New System.Windows.Forms.TextBox()
+        Me.LabelFullname = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.RichTextBox2 = New System.Windows.Forms.RichTextBox()
-        Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me.Label11 = New System.Windows.Forms.Label()
-        Me.Label12 = New System.Windows.Forms.Label()
-        Me.Label13 = New System.Windows.Forms.Label()
-        Me.Label14 = New System.Windows.Forms.Label()
-        Me.TextBox12 = New System.Windows.Forms.TextBox()
-        Me.TextBox13 = New System.Windows.Forms.TextBox()
-        Me.TextBox14 = New System.Windows.Forms.TextBox()
-        Me.TextBox11 = New System.Windows.Forms.TextBox()
+        Me.TextBoxSkill4 = New System.Windows.Forms.TextBox()
+        Me.TextBoxSkill3 = New System.Windows.Forms.TextBox()
+        Me.TextBoxSkill2 = New System.Windows.Forms.TextBox()
+        Me.TextBoxSkill1 = New System.Windows.Forms.TextBox()
+        Me.LabelSkill4 = New System.Windows.Forms.Label()
+        Me.LabelSkill3 = New System.Windows.Forms.Label()
+        Me.LabelSkill2 = New System.Windows.Forms.Label()
+        Me.LabelSkill1 = New System.Windows.Forms.Label()
+        Me.TextBoxSchoolYear = New System.Windows.Forms.TextBox()
+        Me.LabelSy = New System.Windows.Forms.Label()
+        Me.TextBoxGrad = New System.Windows.Forms.TextBox()
+        Me.TextBoxUniv = New System.Windows.Forms.TextBox()
+        Me.LabelUniv = New System.Windows.Forms.Label()
+        Me.LabelGrad = New System.Windows.Forms.Label()
+        Me.RichTextBoxAddress = New System.Windows.Forms.RichTextBox()
+        Me.LabelObj = New System.Windows.Forms.Label()
+        Me.RichTextBoxObjective = New System.Windows.Forms.RichTextBox()
+        Me.LabelAddress = New System.Windows.Forms.Label()
+        Me.ComboBoxGender = New System.Windows.Forms.ComboBox()
+        Me.LabelGender = New System.Windows.Forms.Label()
+        Me.TextBoxPhoneNumber = New System.Windows.Forms.TextBox()
+        Me.LabelPhoneNumber = New System.Windows.Forms.Label()
+        Me.LabelBday = New System.Windows.Forms.Label()
+        Me.DateTimePickerBirthday = New System.Windows.Forms.DateTimePicker()
+        Me.TextBoxEmail = New System.Windows.Forms.TextBox()
+        Me.LabelEmail = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -80,295 +80,300 @@ Partial Class PDFResumeCreator
         Me.LabelTitle.TabIndex = 1
         Me.LabelTitle.Text = "PDF RESUME CREATOR"
         '
-        'TextBox1
+        'TextBoxFullname
         '
-        Me.TextBox1.Location = New System.Drawing.Point(32, 37)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(343, 23)
-        Me.TextBox1.TabIndex = 2
+        Me.TextBoxFullname.Location = New System.Drawing.Point(32, 37)
+        Me.TextBoxFullname.Name = "TextBoxFullname"
+        Me.TextBoxFullname.Size = New System.Drawing.Size(343, 23)
+        Me.TextBoxFullname.TabIndex = 2
         '
-        'Label1
+        'LabelFullname
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Segoe UI Semibold", 12.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(19, 11)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(84, 23)
-        Me.Label1.TabIndex = 3
-        Me.Label1.Text = "Fullname:"
+        Me.LabelFullname.AutoSize = True
+        Me.LabelFullname.Font = New System.Drawing.Font("Segoe UI Semibold", 12.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.LabelFullname.ForeColor = System.Drawing.Color.White
+        Me.LabelFullname.Location = New System.Drawing.Point(19, 11)
+        Me.LabelFullname.Name = "LabelFullname"
+        Me.LabelFullname.Size = New System.Drawing.Size(84, 23)
+        Me.LabelFullname.TabIndex = 3
+        Me.LabelFullname.Text = "Fullname:"
         '
         'Panel1
         '
-        Me.Panel1.Controls.Add(Me.TextBox11)
-        Me.Panel1.Controls.Add(Me.TextBox14)
-        Me.Panel1.Controls.Add(Me.TextBox13)
-        Me.Panel1.Controls.Add(Me.TextBox12)
-        Me.Panel1.Controls.Add(Me.Label14)
-        Me.Panel1.Controls.Add(Me.Label13)
-        Me.Panel1.Controls.Add(Me.Label12)
-        Me.Panel1.Controls.Add(Me.Label11)
-        Me.Panel1.Controls.Add(Me.TextBox6)
-        Me.Panel1.Controls.Add(Me.Label10)
-        Me.Panel1.Controls.Add(Me.TextBox5)
-        Me.Panel1.Controls.Add(Me.TextBox4)
-        Me.Panel1.Controls.Add(Me.Label9)
-        Me.Panel1.Controls.Add(Me.Label8)
-        Me.Panel1.Controls.Add(Me.RichTextBox1)
-        Me.Panel1.Controls.Add(Me.Label7)
-        Me.Panel1.Controls.Add(Me.RichTextBox2)
-        Me.Panel1.Controls.Add(Me.Label6)
-        Me.Panel1.Controls.Add(Me.ComboBox1)
-        Me.Panel1.Controls.Add(Me.Label5)
-        Me.Panel1.Controls.Add(Me.TextBox3)
-        Me.Panel1.Controls.Add(Me.Label4)
-        Me.Panel1.Controls.Add(Me.Label3)
-        Me.Panel1.Controls.Add(Me.DateTimePicker1)
-        Me.Panel1.Controls.Add(Me.TextBox2)
-        Me.Panel1.Controls.Add(Me.Label2)
-        Me.Panel1.Controls.Add(Me.TextBox1)
-        Me.Panel1.Controls.Add(Me.Label1)
-        Me.Panel1.Location = New System.Drawing.Point(21, 74)
+        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(106, Byte), Integer), CType(CType(123, Byte), Integer))
+        Me.Panel1.Controls.Add(Me.TextBoxSkill4)
+        Me.Panel1.Controls.Add(Me.TextBoxSkill3)
+        Me.Panel1.Controls.Add(Me.TextBoxSkill2)
+        Me.Panel1.Controls.Add(Me.TextBoxSkill1)
+        Me.Panel1.Controls.Add(Me.LabelSkill4)
+        Me.Panel1.Controls.Add(Me.LabelSkill3)
+        Me.Panel1.Controls.Add(Me.LabelSkill2)
+        Me.Panel1.Controls.Add(Me.LabelSkill1)
+        Me.Panel1.Controls.Add(Me.TextBoxSchoolYear)
+        Me.Panel1.Controls.Add(Me.LabelSy)
+        Me.Panel1.Controls.Add(Me.TextBoxGrad)
+        Me.Panel1.Controls.Add(Me.TextBoxUniv)
+        Me.Panel1.Controls.Add(Me.LabelUniv)
+        Me.Panel1.Controls.Add(Me.LabelGrad)
+        Me.Panel1.Controls.Add(Me.RichTextBoxAddress)
+        Me.Panel1.Controls.Add(Me.LabelObj)
+        Me.Panel1.Controls.Add(Me.RichTextBoxObjective)
+        Me.Panel1.Controls.Add(Me.LabelAddress)
+        Me.Panel1.Controls.Add(Me.ComboBoxGender)
+        Me.Panel1.Controls.Add(Me.LabelGender)
+        Me.Panel1.Controls.Add(Me.TextBoxPhoneNumber)
+        Me.Panel1.Controls.Add(Me.LabelPhoneNumber)
+        Me.Panel1.Controls.Add(Me.LabelBday)
+        Me.Panel1.Controls.Add(Me.DateTimePickerBirthday)
+        Me.Panel1.Controls.Add(Me.TextBoxEmail)
+        Me.Panel1.Controls.Add(Me.LabelEmail)
+        Me.Panel1.Controls.Add(Me.TextBoxFullname)
+        Me.Panel1.Controls.Add(Me.LabelFullname)
+        Me.Panel1.Location = New System.Drawing.Point(21, 67)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(709, 398)
+        Me.Panel1.Size = New System.Drawing.Size(723, 382)
         Me.Panel1.TabIndex = 4
         '
-        'TextBox2
+        'TextBoxSkill4
         '
-        Me.TextBox2.Location = New System.Drawing.Point(416, 37)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(275, 23)
-        Me.TextBox2.TabIndex = 4
+        Me.TextBoxSkill4.Location = New System.Drawing.Point(550, 317)
+        Me.TextBoxSkill4.Name = "TextBoxSkill4"
+        Me.TextBoxSkill4.Size = New System.Drawing.Size(141, 23)
+        Me.TextBoxSkill4.TabIndex = 37
         '
-        'Label2
+        'TextBoxSkill3
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Segoe UI Semibold", 12.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(399, 11)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(84, 23)
-        Me.Label2.TabIndex = 5
-        Me.Label2.Text = "Fullname:"
+        Me.TextBoxSkill3.Location = New System.Drawing.Point(376, 317)
+        Me.TextBoxSkill3.Name = "TextBoxSkill3"
+        Me.TextBoxSkill3.Size = New System.Drawing.Size(141, 23)
+        Me.TextBoxSkill3.TabIndex = 36
         '
-        'DateTimePicker1
+        'TextBoxSkill2
         '
-        Me.DateTimePicker1.Location = New System.Drawing.Point(416, 89)
-        Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(275, 23)
-        Me.DateTimePicker1.TabIndex = 6
+        Me.TextBoxSkill2.Location = New System.Drawing.Point(201, 317)
+        Me.TextBoxSkill2.Name = "TextBoxSkill2"
+        Me.TextBoxSkill2.Size = New System.Drawing.Size(141, 23)
+        Me.TextBoxSkill2.TabIndex = 35
         '
-        'Label3
+        'TextBoxSkill1
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Segoe UI Semibold", 12.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(399, 63)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(84, 23)
-        Me.Label3.TabIndex = 7
-        Me.Label3.Text = "Fullname:"
+        Me.TextBoxSkill1.Location = New System.Drawing.Point(32, 317)
+        Me.TextBoxSkill1.Name = "TextBoxSkill1"
+        Me.TextBoxSkill1.Size = New System.Drawing.Size(141, 23)
+        Me.TextBoxSkill1.TabIndex = 34
         '
-        'TextBox3
+        'LabelSkill4
         '
-        Me.TextBox3.Location = New System.Drawing.Point(32, 89)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(159, 23)
-        Me.TextBox3.TabIndex = 8
+        Me.LabelSkill4.AutoSize = True
+        Me.LabelSkill4.Font = New System.Drawing.Font("Segoe UI Semibold", 12.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.LabelSkill4.ForeColor = System.Drawing.Color.White
+        Me.LabelSkill4.Location = New System.Drawing.Point(536, 291)
+        Me.LabelSkill4.Name = "LabelSkill4"
+        Me.LabelSkill4.Size = New System.Drawing.Size(54, 23)
+        Me.LabelSkill4.TabIndex = 32
+        Me.LabelSkill4.Text = "Skill4:"
         '
-        'Label4
+        'LabelSkill3
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Segoe UI Semibold", 12.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(19, 63)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(84, 23)
-        Me.Label4.TabIndex = 9
-        Me.Label4.Text = "Fullname:"
+        Me.LabelSkill3.AutoSize = True
+        Me.LabelSkill3.Font = New System.Drawing.Font("Segoe UI Semibold", 12.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.LabelSkill3.ForeColor = System.Drawing.Color.White
+        Me.LabelSkill3.Location = New System.Drawing.Point(362, 291)
+        Me.LabelSkill3.Name = "LabelSkill3"
+        Me.LabelSkill3.Size = New System.Drawing.Size(53, 23)
+        Me.LabelSkill3.TabIndex = 30
+        Me.LabelSkill3.Text = "Skill3:"
         '
-        'Label5
+        'LabelSkill2
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Segoe UI Semibold", 12.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label5.ForeColor = System.Drawing.Color.White
-        Me.Label5.Location = New System.Drawing.Point(220, 63)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(84, 23)
-        Me.Label5.TabIndex = 11
-        Me.Label5.Text = "Fullname:"
+        Me.LabelSkill2.AutoSize = True
+        Me.LabelSkill2.Font = New System.Drawing.Font("Segoe UI Semibold", 12.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.LabelSkill2.ForeColor = System.Drawing.Color.White
+        Me.LabelSkill2.Location = New System.Drawing.Point(190, 291)
+        Me.LabelSkill2.Name = "LabelSkill2"
+        Me.LabelSkill2.Size = New System.Drawing.Size(53, 23)
+        Me.LabelSkill2.TabIndex = 28
+        Me.LabelSkill2.Text = "Skill2:"
         '
-        'ComboBox1
+        'LabelSkill1
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(233, 89)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(121, 23)
-        Me.ComboBox1.TabIndex = 12
+        Me.LabelSkill1.AutoSize = True
+        Me.LabelSkill1.Font = New System.Drawing.Font("Segoe UI Semibold", 12.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.LabelSkill1.ForeColor = System.Drawing.Color.White
+        Me.LabelSkill1.Location = New System.Drawing.Point(21, 291)
+        Me.LabelSkill1.Name = "LabelSkill1"
+        Me.LabelSkill1.Size = New System.Drawing.Size(51, 23)
+        Me.LabelSkill1.TabIndex = 26
+        Me.LabelSkill1.Text = "Skill1:"
         '
-        'Label6
+        'TextBoxSchoolYear
         '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Segoe UI Semibold", 12.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label6.ForeColor = System.Drawing.Color.White
-        Me.Label6.Location = New System.Drawing.Point(19, 115)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(84, 23)
-        Me.Label6.TabIndex = 14
-        Me.Label6.Text = "Fullname:"
+        Me.TextBoxSchoolYear.Location = New System.Drawing.Point(574, 263)
+        Me.TextBoxSchoolYear.Name = "TextBoxSchoolYear"
+        Me.TextBoxSchoolYear.Size = New System.Drawing.Size(118, 23)
+        Me.TextBoxSchoolYear.TabIndex = 23
         '
-        'Label7
+        'LabelSy
         '
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Segoe UI Semibold", 12.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label7.ForeColor = System.Drawing.Color.White
-        Me.Label7.Location = New System.Drawing.Point(20, 177)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(84, 23)
-        Me.Label7.TabIndex = 16
-        Me.Label7.Text = "Fullname:"
+        Me.LabelSy.AutoSize = True
+        Me.LabelSy.Font = New System.Drawing.Font("Segoe UI Semibold", 12.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.LabelSy.ForeColor = System.Drawing.Color.White
+        Me.LabelSy.Location = New System.Drawing.Point(563, 237)
+        Me.LabelSy.Name = "LabelSy"
+        Me.LabelSy.Size = New System.Drawing.Size(103, 23)
+        Me.LabelSy.TabIndex = 24
+        Me.LabelSy.Text = "School Year:"
         '
-        'RichTextBox2
+        'TextBoxGrad
         '
-        Me.RichTextBox2.Location = New System.Drawing.Point(32, 204)
-        Me.RichTextBox2.Name = "RichTextBox2"
-        Me.RichTextBox2.Size = New System.Drawing.Size(660, 32)
-        Me.RichTextBox2.TabIndex = 15
-        Me.RichTextBox2.Text = ""
+        Me.TextBoxGrad.Location = New System.Drawing.Point(32, 263)
+        Me.TextBoxGrad.Name = "TextBoxGrad"
+        Me.TextBoxGrad.Size = New System.Drawing.Size(272, 23)
+        Me.TextBoxGrad.TabIndex = 22
         '
-        'RichTextBox1
+        'TextBoxUniv
         '
-        Me.RichTextBox1.Location = New System.Drawing.Point(32, 141)
-        Me.RichTextBox1.Name = "RichTextBox1"
-        Me.RichTextBox1.Size = New System.Drawing.Size(660, 32)
-        Me.RichTextBox1.TabIndex = 17
-        Me.RichTextBox1.Text = ""
+        Me.TextBoxUniv.Location = New System.Drawing.Point(324, 263)
+        Me.TextBoxUniv.Name = "TextBoxUniv"
+        Me.TextBoxUniv.Size = New System.Drawing.Size(227, 23)
+        Me.TextBoxUniv.TabIndex = 20
         '
-        'Label8
+        'LabelUniv
         '
-        Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Segoe UI Semibold", 12.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label8.ForeColor = System.Drawing.Color.White
-        Me.Label8.Location = New System.Drawing.Point(20, 237)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(84, 23)
-        Me.Label8.TabIndex = 19
-        Me.Label8.Text = "Fullname:"
+        Me.LabelUniv.AutoSize = True
+        Me.LabelUniv.Font = New System.Drawing.Font("Segoe UI Semibold", 12.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.LabelUniv.ForeColor = System.Drawing.Color.White
+        Me.LabelUniv.Location = New System.Drawing.Point(311, 237)
+        Me.LabelUniv.Name = "LabelUniv"
+        Me.LabelUniv.Size = New System.Drawing.Size(90, 23)
+        Me.LabelUniv.TabIndex = 21
+        Me.LabelUniv.Text = "University:"
         '
-        'TextBox4
+        'LabelGrad
         '
-        Me.TextBox4.Location = New System.Drawing.Point(324, 263)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(227, 23)
-        Me.TextBox4.TabIndex = 20
+        Me.LabelGrad.AutoSize = True
+        Me.LabelGrad.Font = New System.Drawing.Font("Segoe UI Semibold", 12.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.LabelGrad.ForeColor = System.Drawing.Color.White
+        Me.LabelGrad.Location = New System.Drawing.Point(20, 237)
+        Me.LabelGrad.Name = "LabelGrad"
+        Me.LabelGrad.Size = New System.Drawing.Size(157, 23)
+        Me.LabelGrad.TabIndex = 19
+        Me.LabelGrad.Text = "College Graduated:"
         '
-        'Label9
+        'RichTextBoxAddress
         '
-        Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("Segoe UI Semibold", 12.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label9.ForeColor = System.Drawing.Color.White
-        Me.Label9.Location = New System.Drawing.Point(311, 237)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(84, 23)
-        Me.Label9.TabIndex = 21
-        Me.Label9.Text = "Fullname:"
+        Me.RichTextBoxAddress.Location = New System.Drawing.Point(32, 141)
+        Me.RichTextBoxAddress.Name = "RichTextBoxAddress"
+        Me.RichTextBoxAddress.Size = New System.Drawing.Size(660, 32)
+        Me.RichTextBoxAddress.TabIndex = 17
+        Me.RichTextBoxAddress.Text = ""
         '
-        'TextBox5
+        'LabelObj
         '
-        Me.TextBox5.Location = New System.Drawing.Point(32, 263)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(272, 23)
-        Me.TextBox5.TabIndex = 22
+        Me.LabelObj.AutoSize = True
+        Me.LabelObj.Font = New System.Drawing.Font("Segoe UI Semibold", 12.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.LabelObj.ForeColor = System.Drawing.Color.White
+        Me.LabelObj.Location = New System.Drawing.Point(20, 177)
+        Me.LabelObj.Name = "LabelObj"
+        Me.LabelObj.Size = New System.Drawing.Size(86, 23)
+        Me.LabelObj.TabIndex = 16
+        Me.LabelObj.Text = "Objective:"
         '
-        'TextBox6
+        'RichTextBoxObjective
         '
-        Me.TextBox6.Location = New System.Drawing.Point(574, 263)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(118, 23)
-        Me.TextBox6.TabIndex = 23
+        Me.RichTextBoxObjective.Location = New System.Drawing.Point(32, 204)
+        Me.RichTextBoxObjective.Name = "RichTextBoxObjective"
+        Me.RichTextBoxObjective.Size = New System.Drawing.Size(660, 32)
+        Me.RichTextBoxObjective.TabIndex = 15
+        Me.RichTextBoxObjective.Text = ""
         '
-        'Label10
+        'LabelAddress
         '
-        Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("Segoe UI Semibold", 12.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label10.ForeColor = System.Drawing.Color.White
-        Me.Label10.Location = New System.Drawing.Point(563, 237)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(84, 23)
-        Me.Label10.TabIndex = 24
-        Me.Label10.Text = "Fullname:"
+        Me.LabelAddress.AutoSize = True
+        Me.LabelAddress.Font = New System.Drawing.Font("Segoe UI Semibold", 12.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.LabelAddress.ForeColor = System.Drawing.Color.White
+        Me.LabelAddress.Location = New System.Drawing.Point(19, 115)
+        Me.LabelAddress.Name = "LabelAddress"
+        Me.LabelAddress.Size = New System.Drawing.Size(74, 23)
+        Me.LabelAddress.TabIndex = 14
+        Me.LabelAddress.Text = "Address:"
         '
-        'Label11
+        'ComboBoxGender
         '
-        Me.Label11.AutoSize = True
-        Me.Label11.Font = New System.Drawing.Font("Segoe UI Semibold", 12.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label11.ForeColor = System.Drawing.Color.White
-        Me.Label11.Location = New System.Drawing.Point(21, 291)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(84, 23)
-        Me.Label11.TabIndex = 26
-        Me.Label11.Text = "Fullname:"
+        Me.ComboBoxGender.FormattingEnabled = True
+        Me.ComboBoxGender.Items.AddRange(New Object() {"", "Male", "Female"})
+        Me.ComboBoxGender.Location = New System.Drawing.Point(233, 89)
+        Me.ComboBoxGender.Name = "ComboBoxGender"
+        Me.ComboBoxGender.Size = New System.Drawing.Size(121, 23)
+        Me.ComboBoxGender.TabIndex = 12
         '
-        'Label12
+        'LabelGender
         '
-        Me.Label12.AutoSize = True
-        Me.Label12.Font = New System.Drawing.Font("Segoe UI Semibold", 12.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label12.ForeColor = System.Drawing.Color.White
-        Me.Label12.Location = New System.Drawing.Point(190, 291)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(84, 23)
-        Me.Label12.TabIndex = 28
-        Me.Label12.Text = "Fullname:"
+        Me.LabelGender.AutoSize = True
+        Me.LabelGender.Font = New System.Drawing.Font("Segoe UI Semibold", 12.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.LabelGender.ForeColor = System.Drawing.Color.White
+        Me.LabelGender.Location = New System.Drawing.Point(220, 63)
+        Me.LabelGender.Name = "LabelGender"
+        Me.LabelGender.Size = New System.Drawing.Size(71, 23)
+        Me.LabelGender.TabIndex = 11
+        Me.LabelGender.Text = "Gender:"
         '
-        'Label13
+        'TextBoxPhoneNumber
         '
-        Me.Label13.AutoSize = True
-        Me.Label13.Font = New System.Drawing.Font("Segoe UI Semibold", 12.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label13.ForeColor = System.Drawing.Color.White
-        Me.Label13.Location = New System.Drawing.Point(362, 291)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(84, 23)
-        Me.Label13.TabIndex = 30
-        Me.Label13.Text = "Fullname:"
+        Me.TextBoxPhoneNumber.Location = New System.Drawing.Point(32, 89)
+        Me.TextBoxPhoneNumber.Name = "TextBoxPhoneNumber"
+        Me.TextBoxPhoneNumber.Size = New System.Drawing.Size(159, 23)
+        Me.TextBoxPhoneNumber.TabIndex = 8
         '
-        'Label14
+        'LabelPhoneNumber
         '
-        Me.Label14.AutoSize = True
-        Me.Label14.Font = New System.Drawing.Font("Segoe UI Semibold", 12.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label14.ForeColor = System.Drawing.Color.White
-        Me.Label14.Location = New System.Drawing.Point(536, 291)
-        Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(84, 23)
-        Me.Label14.TabIndex = 32
-        Me.Label14.Text = "Fullname:"
+        Me.LabelPhoneNumber.AutoSize = True
+        Me.LabelPhoneNumber.Font = New System.Drawing.Font("Segoe UI Semibold", 12.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.LabelPhoneNumber.ForeColor = System.Drawing.Color.White
+        Me.LabelPhoneNumber.Location = New System.Drawing.Point(19, 63)
+        Me.LabelPhoneNumber.Name = "LabelPhoneNumber"
+        Me.LabelPhoneNumber.Size = New System.Drawing.Size(132, 23)
+        Me.LabelPhoneNumber.TabIndex = 9
+        Me.LabelPhoneNumber.Text = "Phone Number:"
         '
-        'TextBox12
+        'LabelBday
         '
-        Me.TextBox12.Location = New System.Drawing.Point(32, 317)
-        Me.TextBox12.Name = "TextBox12"
-        Me.TextBox12.Size = New System.Drawing.Size(141, 23)
-        Me.TextBox12.TabIndex = 34
+        Me.LabelBday.AutoSize = True
+        Me.LabelBday.Font = New System.Drawing.Font("Segoe UI Semibold", 12.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.LabelBday.ForeColor = System.Drawing.Color.White
+        Me.LabelBday.Location = New System.Drawing.Point(399, 63)
+        Me.LabelBday.Name = "LabelBday"
+        Me.LabelBday.Size = New System.Drawing.Size(78, 23)
+        Me.LabelBday.TabIndex = 7
+        Me.LabelBday.Text = "Birthday:"
         '
-        'TextBox13
+        'DateTimePickerBirthday
         '
-        Me.TextBox13.Location = New System.Drawing.Point(201, 317)
-        Me.TextBox13.Name = "TextBox13"
-        Me.TextBox13.Size = New System.Drawing.Size(141, 23)
-        Me.TextBox13.TabIndex = 35
+        Me.DateTimePickerBirthday.Location = New System.Drawing.Point(416, 89)
+        Me.DateTimePickerBirthday.MaxDate = New Date(2022, 7, 25, 23, 59, 59, 0)
+        Me.DateTimePickerBirthday.MinDate = New Date(1909, 1, 25, 23, 59, 59, 0)
+        Me.DateTimePickerBirthday.Name = "DateTimePickerBirthday"
+        Me.DateTimePickerBirthday.Size = New System.Drawing.Size(275, 23)
+        Me.DateTimePickerBirthday.TabIndex = 6
+        Me.DateTimePickerBirthday.Value = New Date(2022, 7, 5, 1, 20, 18, 0)
         '
-        'TextBox14
+        'TextBoxEmail
         '
-        Me.TextBox14.Location = New System.Drawing.Point(376, 317)
-        Me.TextBox14.Name = "TextBox14"
-        Me.TextBox14.Size = New System.Drawing.Size(141, 23)
-        Me.TextBox14.TabIndex = 36
+        Me.TextBoxEmail.Location = New System.Drawing.Point(416, 37)
+        Me.TextBoxEmail.Name = "TextBoxEmail"
+        Me.TextBoxEmail.Size = New System.Drawing.Size(275, 23)
+        Me.TextBoxEmail.TabIndex = 4
         '
-        'TextBox11
+        'LabelEmail
         '
-        Me.TextBox11.Location = New System.Drawing.Point(550, 317)
-        Me.TextBox11.Name = "TextBox11"
-        Me.TextBox11.Size = New System.Drawing.Size(141, 23)
-        Me.TextBox11.TabIndex = 37
+        Me.LabelEmail.AutoSize = True
+        Me.LabelEmail.Font = New System.Drawing.Font("Segoe UI Semibold", 12.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.LabelEmail.ForeColor = System.Drawing.Color.White
+        Me.LabelEmail.Location = New System.Drawing.Point(399, 11)
+        Me.LabelEmail.Name = "LabelEmail"
+        Me.LabelEmail.Size = New System.Drawing.Size(55, 23)
+        Me.LabelEmail.TabIndex = 5
+        Me.LabelEmail.Text = "Email:"
         '
         'PDFResumeCreator
         '
@@ -392,33 +397,33 @@ Partial Class PDFResumeCreator
 
     Friend WithEvents ButtonPoweroff As Button
     Friend WithEvents LabelTitle As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents Label1 As Label
+    Friend WithEvents TextBoxFullname As TextBox
+    Friend WithEvents LabelFullname As Label
     Friend WithEvents Panel1 As Panel
-    Friend WithEvents TextBox11 As TextBox
-    Friend WithEvents TextBox14 As TextBox
-    Friend WithEvents TextBox13 As TextBox
-    Friend WithEvents TextBox12 As TextBox
-    Friend WithEvents Label14 As Label
-    Friend WithEvents Label13 As Label
-    Friend WithEvents Label12 As Label
-    Friend WithEvents Label11 As Label
-    Friend WithEvents TextBox6 As TextBox
-    Friend WithEvents Label10 As Label
-    Friend WithEvents TextBox5 As TextBox
-    Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents Label9 As Label
-    Friend WithEvents Label8 As Label
-    Friend WithEvents RichTextBox1 As RichTextBox
-    Friend WithEvents Label7 As Label
-    Friend WithEvents RichTextBox2 As RichTextBox
-    Friend WithEvents Label6 As Label
-    Friend WithEvents ComboBox1 As ComboBox
-    Friend WithEvents Label5 As Label
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents Label4 As Label
-    Friend WithEvents Label3 As Label
-    Friend WithEvents DateTimePicker1 As DateTimePicker
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents Label2 As Label
+    Friend WithEvents TextBoxSkill4 As TextBox
+    Friend WithEvents TextBoxSkill3 As TextBox
+    Friend WithEvents TextBoxSkill2 As TextBox
+    Friend WithEvents TextBoxSkill1 As TextBox
+    Friend WithEvents LabelSkill4 As Label
+    Friend WithEvents LabelSkill3 As Label
+    Friend WithEvents LabelSkill2 As Label
+    Friend WithEvents LabelSkill1 As Label
+    Friend WithEvents TextBoxSchoolYear As TextBox
+    Friend WithEvents LabelSy As Label
+    Friend WithEvents TextBoxGrad As TextBox
+    Friend WithEvents TextBoxUniv As TextBox
+    Friend WithEvents LabelUniv As Label
+    Friend WithEvents LabelGrad As Label
+    Friend WithEvents RichTextBoxAddress As RichTextBox
+    Friend WithEvents LabelObj As Label
+    Friend WithEvents RichTextBoxObjective As RichTextBox
+    Friend WithEvents LabelAddress As Label
+    Friend WithEvents ComboBoxGender As ComboBox
+    Friend WithEvents LabelGender As Label
+    Friend WithEvents TextBoxPhoneNumber As TextBox
+    Friend WithEvents LabelPhoneNumber As Label
+    Friend WithEvents LabelBday As Label
+    Friend WithEvents DateTimePickerBirthday As DateTimePicker
+    Friend WithEvents TextBoxEmail As TextBox
+    Friend WithEvents LabelEmail As Label
 End Class
