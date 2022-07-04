@@ -54,6 +54,7 @@ Partial Class PDFResumeCreator
         Me.DateTimePickerBirthday = New System.Windows.Forms.DateTimePicker()
         Me.TextBoxEmail = New System.Windows.Forms.TextBox()
         Me.LabelEmail = New System.Windows.Forms.Label()
+        Me.ButtonSaveasJSON = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -101,6 +102,7 @@ Partial Class PDFResumeCreator
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(106, Byte), Integer), CType(CType(123, Byte), Integer))
+        Me.Panel1.Controls.Add(Me.ButtonSaveasJSON)
         Me.Panel1.Controls.Add(Me.TextBoxSkill4)
         Me.Panel1.Controls.Add(Me.TextBoxSkill3)
         Me.Panel1.Controls.Add(Me.TextBoxSkill2)
@@ -129,9 +131,9 @@ Partial Class PDFResumeCreator
         Me.Panel1.Controls.Add(Me.LabelEmail)
         Me.Panel1.Controls.Add(Me.TextBoxFullname)
         Me.Panel1.Controls.Add(Me.LabelFullname)
-        Me.Panel1.Location = New System.Drawing.Point(21, 67)
+        Me.Panel1.Location = New System.Drawing.Point(21, 57)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(723, 382)
+        Me.Panel1.Size = New System.Drawing.Size(723, 403)
         Me.Panel1.TabIndex = 4
         '
         'TextBoxSkill4
@@ -220,9 +222,9 @@ Partial Class PDFResumeCreator
         Me.LabelSy.ForeColor = System.Drawing.Color.White
         Me.LabelSy.Location = New System.Drawing.Point(563, 237)
         Me.LabelSy.Name = "LabelSy"
-        Me.LabelSy.Size = New System.Drawing.Size(103, 23)
+        Me.LabelSy.Size = New System.Drawing.Size(52, 23)
         Me.LabelSy.TabIndex = 24
-        Me.LabelSy.Text = "School Year:"
+        Me.LabelSy.Text = " Year:"
         '
         'TextBoxGrad
         '
@@ -302,7 +304,7 @@ Partial Class PDFResumeCreator
         '
         Me.ComboBoxGender.FormattingEnabled = True
         Me.ComboBoxGender.Items.AddRange(New Object() {"", "Male", "Female"})
-        Me.ComboBoxGender.Location = New System.Drawing.Point(233, 89)
+        Me.ComboBoxGender.Location = New System.Drawing.Point(312, 89)
         Me.ComboBoxGender.Name = "ComboBoxGender"
         Me.ComboBoxGender.Size = New System.Drawing.Size(121, 23)
         Me.ComboBoxGender.TabIndex = 12
@@ -312,7 +314,7 @@ Partial Class PDFResumeCreator
         Me.LabelGender.AutoSize = True
         Me.LabelGender.Font = New System.Drawing.Font("Segoe UI Semibold", 12.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.LabelGender.ForeColor = System.Drawing.Color.White
-        Me.LabelGender.Location = New System.Drawing.Point(220, 63)
+        Me.LabelGender.Location = New System.Drawing.Point(295, 63)
         Me.LabelGender.Name = "LabelGender"
         Me.LabelGender.Size = New System.Drawing.Size(71, 23)
         Me.LabelGender.TabIndex = 11
@@ -322,7 +324,7 @@ Partial Class PDFResumeCreator
         '
         Me.TextBoxPhoneNumber.Location = New System.Drawing.Point(32, 89)
         Me.TextBoxPhoneNumber.Name = "TextBoxPhoneNumber"
-        Me.TextBoxPhoneNumber.Size = New System.Drawing.Size(159, 23)
+        Me.TextBoxPhoneNumber.Size = New System.Drawing.Size(242, 23)
         Me.TextBoxPhoneNumber.TabIndex = 8
         '
         'LabelPhoneNumber
@@ -341,7 +343,7 @@ Partial Class PDFResumeCreator
         Me.LabelBday.AutoSize = True
         Me.LabelBday.Font = New System.Drawing.Font("Segoe UI Semibold", 12.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.LabelBday.ForeColor = System.Drawing.Color.White
-        Me.LabelBday.Location = New System.Drawing.Point(399, 63)
+        Me.LabelBday.Location = New System.Drawing.Point(439, 63)
         Me.LabelBday.Name = "LabelBday"
         Me.LabelBday.Size = New System.Drawing.Size(78, 23)
         Me.LabelBday.TabIndex = 7
@@ -349,11 +351,11 @@ Partial Class PDFResumeCreator
         '
         'DateTimePickerBirthday
         '
-        Me.DateTimePickerBirthday.Location = New System.Drawing.Point(416, 89)
+        Me.DateTimePickerBirthday.Location = New System.Drawing.Point(484, 89)
         Me.DateTimePickerBirthday.MaxDate = New Date(2022, 7, 25, 23, 59, 59, 0)
         Me.DateTimePickerBirthday.MinDate = New Date(1909, 1, 25, 23, 59, 59, 0)
         Me.DateTimePickerBirthday.Name = "DateTimePickerBirthday"
-        Me.DateTimePickerBirthday.Size = New System.Drawing.Size(275, 23)
+        Me.DateTimePickerBirthday.Size = New System.Drawing.Size(207, 23)
         Me.DateTimePickerBirthday.TabIndex = 6
         Me.DateTimePickerBirthday.Value = New Date(2022, 7, 5, 1, 20, 18, 0)
         '
@@ -374,6 +376,15 @@ Partial Class PDFResumeCreator
         Me.LabelEmail.Size = New System.Drawing.Size(55, 23)
         Me.LabelEmail.TabIndex = 5
         Me.LabelEmail.Text = "Email:"
+        '
+        'ButtonSaveasJSON
+        '
+        Me.ButtonSaveasJSON.Location = New System.Drawing.Point(584, 359)
+        Me.ButtonSaveasJSON.Name = "ButtonSaveasJSON"
+        Me.ButtonSaveasJSON.Size = New System.Drawing.Size(107, 33)
+        Me.ButtonSaveasJSON.TabIndex = 38
+        Me.ButtonSaveasJSON.Text = "Save As JSON"
+        Me.ButtonSaveasJSON.UseVisualStyleBackColor = True
         '
         'PDFResumeCreator
         '
@@ -426,4 +437,5 @@ Partial Class PDFResumeCreator
     Friend WithEvents DateTimePickerBirthday As DateTimePicker
     Friend WithEvents TextBoxEmail As TextBox
     Friend WithEvents LabelEmail As Label
+    Friend WithEvents ButtonSaveasJSON As Button
 End Class
