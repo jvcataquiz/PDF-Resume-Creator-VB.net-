@@ -18,3 +18,5 @@ C:\Users\jvcat\source\repos\PDF Resume Creator\PDF Resume Creator\PDF Resume Cre
 C:\Users\jvcat\source\repos\PDF Resume Creator\PDF Resume Creator\PDF Resume Creator\obj\Debug\net6.0-windows\PDF_Resume_Creator.Resources.resources
 C:\Users\jvcat\source\repos\PDF Resume Creator\PDF Resume Creator\PDF Resume Creator\obj\Debug\net6.0-windows\PDF Resume Creator.vbproj.CopyComplete
 C:\Users\jvcat\source\repos\PDF Resume Creator\PDF Resume Creator\PDF Resume Creator\obj\Debug\net6.0-windows\PDF_Resume_Creator.PDFResumeCreator.resources
+C:\Users\jvcat\source\repos\PDF Resume Creator\PDF Resume Creator\PDF Resume Creator\bin\Debug\net6.0-windows\BouncyCastle.Crypto.dll
+C:\Users\jvcat\source\repos\PDF Resume Creator\PDF Resume Creator\PDF Resume Creator\bin\Debug\net6.0-windows\itextsharp.dll

@@ -28,6 +28,7 @@ Partial Class PDFResumeCreator
         Me.TextBoxFullname = New System.Windows.Forms.TextBox()
         Me.LabelFullname = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.ButtonSaveasJSON = New System.Windows.Forms.Button()
         Me.TextBoxSkill4 = New System.Windows.Forms.TextBox()
         Me.TextBoxSkill3 = New System.Windows.Forms.TextBox()
         Me.TextBoxSkill2 = New System.Windows.Forms.TextBox()
@@ -54,7 +55,7 @@ Partial Class PDFResumeCreator
         Me.DateTimePickerBirthday = New System.Windows.Forms.DateTimePicker()
         Me.TextBoxEmail = New System.Windows.Forms.TextBox()
         Me.LabelEmail = New System.Windows.Forms.Label()
-        Me.ButtonSaveasJSON = New System.Windows.Forms.Button()
+        Me.ButtonPrintPDF = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -133,8 +134,20 @@ Partial Class PDFResumeCreator
         Me.Panel1.Controls.Add(Me.LabelFullname)
         Me.Panel1.Location = New System.Drawing.Point(21, 57)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(723, 403)
+        Me.Panel1.Size = New System.Drawing.Size(723, 401)
         Me.Panel1.TabIndex = 4
+        '
+        'ButtonSaveasJSON
+        '
+        Me.ButtonSaveasJSON.BackColor = System.Drawing.Color.Black
+        Me.ButtonSaveasJSON.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.ButtonSaveasJSON.ForeColor = System.Drawing.Color.White
+        Me.ButtonSaveasJSON.Location = New System.Drawing.Point(584, 359)
+        Me.ButtonSaveasJSON.Name = "ButtonSaveasJSON"
+        Me.ButtonSaveasJSON.Size = New System.Drawing.Size(107, 33)
+        Me.ButtonSaveasJSON.TabIndex = 38
+        Me.ButtonSaveasJSON.Text = "Save As JSON"
+        Me.ButtonSaveasJSON.UseVisualStyleBackColor = False
         '
         'TextBoxSkill4
         '
@@ -377,21 +390,26 @@ Partial Class PDFResumeCreator
         Me.LabelEmail.TabIndex = 5
         Me.LabelEmail.Text = "Email:"
         '
-        'ButtonSaveasJSON
+        'ButtonPrintPDF
         '
-        Me.ButtonSaveasJSON.Location = New System.Drawing.Point(584, 359)
-        Me.ButtonSaveasJSON.Name = "ButtonSaveasJSON"
-        Me.ButtonSaveasJSON.Size = New System.Drawing.Size(107, 33)
-        Me.ButtonSaveasJSON.TabIndex = 38
-        Me.ButtonSaveasJSON.Text = "Save As JSON"
-        Me.ButtonSaveasJSON.UseVisualStyleBackColor = True
+        Me.ButtonPrintPDF.BackColor = System.Drawing.Color.DarkSeaGreen
+        Me.ButtonPrintPDF.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.ButtonPrintPDF.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.ButtonPrintPDF.ForeColor = System.Drawing.Color.Red
+        Me.ButtonPrintPDF.Location = New System.Drawing.Point(605, 474)
+        Me.ButtonPrintPDF.Name = "ButtonPrintPDF"
+        Me.ButtonPrintPDF.Size = New System.Drawing.Size(107, 28)
+        Me.ButtonPrintPDF.TabIndex = 5
+        Me.ButtonPrintPDF.Text = "Print to PDF"
+        Me.ButtonPrintPDF.UseVisualStyleBackColor = False
         '
         'PDFResumeCreator
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(4, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(43, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(756, 509)
+        Me.ClientSize = New System.Drawing.Size(763, 518)
+        Me.Controls.Add(Me.ButtonPrintPDF)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.LabelTitle)
         Me.Controls.Add(Me.ButtonPoweroff)
@@ -438,4 +456,5 @@ Partial Class PDFResumeCreator
     Friend WithEvents TextBoxEmail As TextBox
     Friend WithEvents LabelEmail As Label
     Friend WithEvents ButtonSaveasJSON As Button
+    Friend WithEvents ButtonPrintPDF As Button
 End Class
