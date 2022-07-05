@@ -16,7 +16,7 @@ Public Class PDFResumeCreator
 
     Private Sub ButtonSaveasJSON_Click(sender As Object, e As EventArgs) Handles ButtonSaveasJSON.Click
         path = "JSONFILE/" & TextBoxFullname.Text & ".json"
-        Dim bday As String = DateTimePickerBirthday.Value.Month & DateTimePickerBirthday.Value.Day & DateTimePickerBirthday.Value.Year
+        Dim bday As String = DateTimePickerBirthday.Value.Month & " / " & DateTimePickerBirthday.Value.Day & " / " & DateTimePickerBirthday.Value.Year
         Dim customers As List(Of information) = New List(Of information)()
 
         Dim customer As information = New information With {
@@ -27,7 +27,7 @@ Public Class PDFResumeCreator
             .Birthday = bday,
             .Address = RichTextBoxAddress.Text,
             .Objective = RichTextBoxObjective.Text,
-            .College = TextBoxGrad.Text,
+            .Course = TextBoxCourse.Text,
             .University = TextBoxUniv.Text,
             .Schoolyear = TextBoxSchoolYear.Text,
             .Skill1 = TextBoxSkill1.Text,
@@ -40,13 +40,11 @@ Public Class PDFResumeCreator
 
 
         Dim json As String = JsonConvert.SerializeObject(customers, Formatting.Indented)
-
         Dim newStr = json.Substring(1, json.Length - 1)
-
         newStr = newStr.Remove(newStr.LastIndexOf("]"))
-
         File.WriteAllText(path, newStr)
         MessageBox.Show(TextBoxFullname.Text & ".json SuccessFully!!!!!")
+        ButtonPrintPDF.Visible = True
     End Sub
 
     Private Sub ButtonPrintPDF_Click(sender As Object, e As EventArgs) Handles ButtonPrintPDF.Click
@@ -61,7 +59,7 @@ Public Class PDFResumeCreator
         Dim PDF As PdfWriter = PdfWriter.GetInstance(jsonWriter, New FileStream(pdflocation, FileMode.Create))
 
         jsonWriter.Open()
-        jsonWriter.Add(New Paragraph(record.Name))
+
         Dim name As Paragraph = New Paragraph(record.Name.ToUpper())
         Dim email As Paragraph = New Paragraph(record.Email)
         Dim contact As Paragraph = New Paragraph(record.PhoneNumber)
@@ -70,26 +68,30 @@ Public Class PDFResumeCreator
         Dim obj As Chunk = New Chunk(vbLf & vbLf & "OBJECTIVE:" & vbLf)
         Dim objective As Paragraph = New Paragraph(record.Objective & vbLf & vbLf)
         Dim edu As Chunk = New Chunk(vbLf & "EDUCATIONAL BACKGROUND:" & vbLf & vbLf)
-        Dim college As Paragraph = New Paragraph("COLLEGE: " & record.College & vbLf & vbLf)
-        Dim universi As Paragraph = New Paragraph("COLLEGE: " & record.University & vbLf & vbLf)
-        Dim sy As Paragraph = New Paragraph("COLLEGE: " & record.Schoolyear & vbLf & vbLf)
+        Dim universi As Paragraph = New Paragraph("Univertsity: " & record.University & "      Course: " & record.Course & "      Shool year: " & record.Schoolyear & vbLf)
+
         Dim skill As Chunk = New Chunk(vbLf & "SKILLS:" & vbLf & vbLf)
         Dim _skill1 As Paragraph = New Paragraph("* " & record.Skill1 & vbLf & vbLf)
         Dim _skill2 As Paragraph = New Paragraph("* " & record.Skill2 & vbLf & vbLf)
         Dim _skill3 As Paragraph = New Paragraph("* " & record.Skill3 & vbLf & vbLf)
-        Dim _skill4 As Paragraph = New Paragraph("* " & record.Skill4 & vbLf & vbLf)
-
+        Dim _skill4 As Paragraph = New Paragraph("* " & record.Skill4 & vbLf & vbLf & vbLf & vbLf)
+        Dim signame As Paragraph = New Paragraph(record.Name.ToUpper())
         Dim line As LineSeparator = New LineSeparator(5.0F, 100.0F, BaseColor.BLACK, Element.ALIGN_RIGHT, 1)
 
         name.Font.Size = 20
         name.Alignment = Element.ALIGN_CENTER
+        email.Alignment = Element.ALIGN_CENTER
+        contact.Alignment = Element.ALIGN_CENTER
+        address.Alignment = Element.ALIGN_CENTER
+        birthday.Alignment = Element.ALIGN_CENTER
         name.SetLeading(15, 1)
         obj.Font.Size = 18
         edu.Font.Size = 18
 
         objective.SetLeading(15, 1)
+        objective.IndentationLeft = 40
 
-        college.IndentationLeft = 40
+        universi.IndentationLeft = 40
 
         skill.Font.Size = 18
         _skill1.IndentationLeft = 40
@@ -98,6 +100,8 @@ Public Class PDFResumeCreator
         _skill4.IndentationLeft = 40
 
 
+        signame.Alignment = Element.ALIGN_RIGHT
+
         jsonWriter.Add(name)
         jsonWriter.Add(contact)
         jsonWriter.Add(address)
@@ -105,22 +109,30 @@ Public Class PDFResumeCreator
         jsonWriter.Add(birthday)
         jsonWriter.Add(obj)
         jsonWriter.Add(objective)
+        jsonWriter.Add(line)
         jsonWriter.Add(edu)
-
-        jsonWriter.Add(college)
+        jsonWriter.Add(universi)
+        jsonWriter.Add(line)
         jsonWriter.Add(skill)
         jsonWriter.Add(_skill1)
         jsonWriter.Add(_skill2)
         jsonWriter.Add(_skill3)
         jsonWriter.Add(_skill4)
-        jsonWriter.Add(line)
+        jsonWriter.Add(signame)
         jsonWriter.Close()
-
+        MessageBox.Show(TextBoxFullname.Text & ".pdf SuccessFully!!!!!")
     End Sub
 
     Private Sub PDFResumeCreator_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         path = "JSONFILE/" & TextBoxFullname.Text & ".json"
         filedata = "PDFFILE/" & TextBoxFullname.Text & ".pdf"
+    End Sub
+
+    Private Sub ButtonNew_Click(sender As Object, e As EventArgs) Handles ButtonNew.Click
+        Dim newpage As New PDFResumeCreator
+        newpage.Show()
+        Me.Hide()
+
     End Sub
 End Class
 
@@ -132,7 +144,7 @@ Public Class information
     Public Property Gender As String
     Public Property Birthday As String
     Public Property Objective As String
-    Public Property College As String
+    Public Property Course As String
     Public Property University As String
     Public Property Schoolyear As String
     Public Property Skill1 As String

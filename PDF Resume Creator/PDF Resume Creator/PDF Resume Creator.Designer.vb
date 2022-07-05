@@ -39,7 +39,7 @@ Partial Class PDFResumeCreator
         Me.LabelSkill1 = New System.Windows.Forms.Label()
         Me.TextBoxSchoolYear = New System.Windows.Forms.TextBox()
         Me.LabelSy = New System.Windows.Forms.Label()
-        Me.TextBoxGrad = New System.Windows.Forms.TextBox()
+        Me.TextBoxCourse = New System.Windows.Forms.TextBox()
         Me.TextBoxUniv = New System.Windows.Forms.TextBox()
         Me.LabelUniv = New System.Windows.Forms.Label()
         Me.LabelGrad = New System.Windows.Forms.Label()
@@ -56,6 +56,7 @@ Partial Class PDFResumeCreator
         Me.TextBoxEmail = New System.Windows.Forms.TextBox()
         Me.LabelEmail = New System.Windows.Forms.Label()
         Me.ButtonPrintPDF = New System.Windows.Forms.Button()
+        Me.ButtonNew = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -87,7 +88,7 @@ Partial Class PDFResumeCreator
         Me.TextBoxFullname.Location = New System.Drawing.Point(32, 37)
         Me.TextBoxFullname.Name = "TextBoxFullname"
         Me.TextBoxFullname.Size = New System.Drawing.Size(343, 23)
-        Me.TextBoxFullname.TabIndex = 2
+        Me.TextBoxFullname.TabIndex = 1
         '
         'LabelFullname
         '
@@ -114,7 +115,7 @@ Partial Class PDFResumeCreator
         Me.Panel1.Controls.Add(Me.LabelSkill1)
         Me.Panel1.Controls.Add(Me.TextBoxSchoolYear)
         Me.Panel1.Controls.Add(Me.LabelSy)
-        Me.Panel1.Controls.Add(Me.TextBoxGrad)
+        Me.Panel1.Controls.Add(Me.TextBoxCourse)
         Me.Panel1.Controls.Add(Me.TextBoxUniv)
         Me.Panel1.Controls.Add(Me.LabelUniv)
         Me.Panel1.Controls.Add(Me.LabelGrad)
@@ -145,7 +146,7 @@ Partial Class PDFResumeCreator
         Me.ButtonSaveasJSON.Location = New System.Drawing.Point(584, 359)
         Me.ButtonSaveasJSON.Name = "ButtonSaveasJSON"
         Me.ButtonSaveasJSON.Size = New System.Drawing.Size(107, 33)
-        Me.ButtonSaveasJSON.TabIndex = 38
+        Me.ButtonSaveasJSON.TabIndex = 15
         Me.ButtonSaveasJSON.Text = "Save As JSON"
         Me.ButtonSaveasJSON.UseVisualStyleBackColor = False
         '
@@ -154,28 +155,28 @@ Partial Class PDFResumeCreator
         Me.TextBoxSkill4.Location = New System.Drawing.Point(550, 317)
         Me.TextBoxSkill4.Name = "TextBoxSkill4"
         Me.TextBoxSkill4.Size = New System.Drawing.Size(141, 23)
-        Me.TextBoxSkill4.TabIndex = 37
+        Me.TextBoxSkill4.TabIndex = 14
         '
         'TextBoxSkill3
         '
         Me.TextBoxSkill3.Location = New System.Drawing.Point(376, 317)
         Me.TextBoxSkill3.Name = "TextBoxSkill3"
         Me.TextBoxSkill3.Size = New System.Drawing.Size(141, 23)
-        Me.TextBoxSkill3.TabIndex = 36
+        Me.TextBoxSkill3.TabIndex = 13
         '
         'TextBoxSkill2
         '
         Me.TextBoxSkill2.Location = New System.Drawing.Point(201, 317)
         Me.TextBoxSkill2.Name = "TextBoxSkill2"
         Me.TextBoxSkill2.Size = New System.Drawing.Size(141, 23)
-        Me.TextBoxSkill2.TabIndex = 35
+        Me.TextBoxSkill2.TabIndex = 12
         '
         'TextBoxSkill1
         '
         Me.TextBoxSkill1.Location = New System.Drawing.Point(32, 317)
         Me.TextBoxSkill1.Name = "TextBoxSkill1"
         Me.TextBoxSkill1.Size = New System.Drawing.Size(141, 23)
-        Me.TextBoxSkill1.TabIndex = 34
+        Me.TextBoxSkill1.TabIndex = 11
         '
         'LabelSkill4
         '
@@ -226,7 +227,7 @@ Partial Class PDFResumeCreator
         Me.TextBoxSchoolYear.Location = New System.Drawing.Point(574, 263)
         Me.TextBoxSchoolYear.Name = "TextBoxSchoolYear"
         Me.TextBoxSchoolYear.Size = New System.Drawing.Size(118, 23)
-        Me.TextBoxSchoolYear.TabIndex = 23
+        Me.TextBoxSchoolYear.TabIndex = 10
         '
         'LabelSy
         '
@@ -239,26 +240,26 @@ Partial Class PDFResumeCreator
         Me.LabelSy.TabIndex = 24
         Me.LabelSy.Text = " Year:"
         '
-        'TextBoxGrad
+        'TextBoxCourse
         '
-        Me.TextBoxGrad.Location = New System.Drawing.Point(32, 263)
-        Me.TextBoxGrad.Name = "TextBoxGrad"
-        Me.TextBoxGrad.Size = New System.Drawing.Size(272, 23)
-        Me.TextBoxGrad.TabIndex = 22
+        Me.TextBoxCourse.Location = New System.Drawing.Point(362, 263)
+        Me.TextBoxCourse.Name = "TextBoxCourse"
+        Me.TextBoxCourse.Size = New System.Drawing.Size(205, 23)
+        Me.TextBoxCourse.TabIndex = 9
         '
         'TextBoxUniv
         '
-        Me.TextBoxUniv.Location = New System.Drawing.Point(324, 263)
+        Me.TextBoxUniv.Location = New System.Drawing.Point(32, 265)
         Me.TextBoxUniv.Name = "TextBoxUniv"
-        Me.TextBoxUniv.Size = New System.Drawing.Size(227, 23)
-        Me.TextBoxUniv.TabIndex = 20
+        Me.TextBoxUniv.Size = New System.Drawing.Size(310, 23)
+        Me.TextBoxUniv.TabIndex = 8
         '
         'LabelUniv
         '
         Me.LabelUniv.AutoSize = True
         Me.LabelUniv.Font = New System.Drawing.Font("Segoe UI Semibold", 12.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.LabelUniv.ForeColor = System.Drawing.Color.White
-        Me.LabelUniv.Location = New System.Drawing.Point(311, 237)
+        Me.LabelUniv.Location = New System.Drawing.Point(21, 239)
         Me.LabelUniv.Name = "LabelUniv"
         Me.LabelUniv.Size = New System.Drawing.Size(90, 23)
         Me.LabelUniv.TabIndex = 21
@@ -269,18 +270,18 @@ Partial Class PDFResumeCreator
         Me.LabelGrad.AutoSize = True
         Me.LabelGrad.Font = New System.Drawing.Font("Segoe UI Semibold", 12.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.LabelGrad.ForeColor = System.Drawing.Color.White
-        Me.LabelGrad.Location = New System.Drawing.Point(20, 237)
+        Me.LabelGrad.Location = New System.Drawing.Point(348, 237)
         Me.LabelGrad.Name = "LabelGrad"
-        Me.LabelGrad.Size = New System.Drawing.Size(157, 23)
+        Me.LabelGrad.Size = New System.Drawing.Size(67, 23)
         Me.LabelGrad.TabIndex = 19
-        Me.LabelGrad.Text = "College Graduated:"
+        Me.LabelGrad.Text = "Course:"
         '
         'RichTextBoxAddress
         '
         Me.RichTextBoxAddress.Location = New System.Drawing.Point(32, 141)
         Me.RichTextBoxAddress.Name = "RichTextBoxAddress"
         Me.RichTextBoxAddress.Size = New System.Drawing.Size(660, 32)
-        Me.RichTextBoxAddress.TabIndex = 17
+        Me.RichTextBoxAddress.TabIndex = 6
         Me.RichTextBoxAddress.Text = ""
         '
         'LabelObj
@@ -299,7 +300,7 @@ Partial Class PDFResumeCreator
         Me.RichTextBoxObjective.Location = New System.Drawing.Point(32, 204)
         Me.RichTextBoxObjective.Name = "RichTextBoxObjective"
         Me.RichTextBoxObjective.Size = New System.Drawing.Size(660, 32)
-        Me.RichTextBoxObjective.TabIndex = 15
+        Me.RichTextBoxObjective.TabIndex = 7
         Me.RichTextBoxObjective.Text = ""
         '
         'LabelAddress
@@ -320,7 +321,7 @@ Partial Class PDFResumeCreator
         Me.ComboBoxGender.Location = New System.Drawing.Point(312, 89)
         Me.ComboBoxGender.Name = "ComboBoxGender"
         Me.ComboBoxGender.Size = New System.Drawing.Size(121, 23)
-        Me.ComboBoxGender.TabIndex = 12
+        Me.ComboBoxGender.TabIndex = 4
         '
         'LabelGender
         '
@@ -336,9 +337,10 @@ Partial Class PDFResumeCreator
         'TextBoxPhoneNumber
         '
         Me.TextBoxPhoneNumber.Location = New System.Drawing.Point(32, 89)
+        Me.TextBoxPhoneNumber.MaxLength = 11
         Me.TextBoxPhoneNumber.Name = "TextBoxPhoneNumber"
         Me.TextBoxPhoneNumber.Size = New System.Drawing.Size(242, 23)
-        Me.TextBoxPhoneNumber.TabIndex = 8
+        Me.TextBoxPhoneNumber.TabIndex = 3
         '
         'LabelPhoneNumber
         '
@@ -369,7 +371,7 @@ Partial Class PDFResumeCreator
         Me.DateTimePickerBirthday.MinDate = New Date(1909, 1, 25, 23, 59, 59, 0)
         Me.DateTimePickerBirthday.Name = "DateTimePickerBirthday"
         Me.DateTimePickerBirthday.Size = New System.Drawing.Size(207, 23)
-        Me.DateTimePickerBirthday.TabIndex = 6
+        Me.DateTimePickerBirthday.TabIndex = 5
         Me.DateTimePickerBirthday.Value = New Date(2022, 7, 5, 1, 20, 18, 0)
         '
         'TextBoxEmail
@@ -377,7 +379,7 @@ Partial Class PDFResumeCreator
         Me.TextBoxEmail.Location = New System.Drawing.Point(416, 37)
         Me.TextBoxEmail.Name = "TextBoxEmail"
         Me.TextBoxEmail.Size = New System.Drawing.Size(275, 23)
-        Me.TextBoxEmail.TabIndex = 4
+        Me.TextBoxEmail.TabIndex = 2
         '
         'LabelEmail
         '
@@ -399,9 +401,24 @@ Partial Class PDFResumeCreator
         Me.ButtonPrintPDF.Location = New System.Drawing.Point(605, 474)
         Me.ButtonPrintPDF.Name = "ButtonPrintPDF"
         Me.ButtonPrintPDF.Size = New System.Drawing.Size(107, 28)
-        Me.ButtonPrintPDF.TabIndex = 5
+        Me.ButtonPrintPDF.TabIndex = 16
         Me.ButtonPrintPDF.Text = "Print to PDF"
         Me.ButtonPrintPDF.UseVisualStyleBackColor = False
+        Me.ButtonPrintPDF.Visible = False
+        '
+        'ButtonNew
+        '
+        Me.ButtonNew.BackColor = System.Drawing.Color.DarkSeaGreen
+        Me.ButtonNew.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.ButtonNew.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.ButtonNew.ForeColor = System.Drawing.Color.Black
+        Me.ButtonNew.Location = New System.Drawing.Point(481, 474)
+        Me.ButtonNew.Name = "ButtonNew"
+        Me.ButtonNew.Size = New System.Drawing.Size(107, 28)
+        Me.ButtonNew.TabIndex = 17
+        Me.ButtonNew.Text = "New Entry"
+        Me.ButtonNew.UseVisualStyleBackColor = False
+        Me.ButtonNew.Visible = False
         '
         'PDFResumeCreator
         '
@@ -409,6 +426,7 @@ Partial Class PDFResumeCreator
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(4, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(43, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(763, 518)
+        Me.Controls.Add(Me.ButtonNew)
         Me.Controls.Add(Me.ButtonPrintPDF)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.LabelTitle)
@@ -439,7 +457,7 @@ Partial Class PDFResumeCreator
     Friend WithEvents LabelSkill1 As Label
     Friend WithEvents TextBoxSchoolYear As TextBox
     Friend WithEvents LabelSy As Label
-    Friend WithEvents TextBoxGrad As TextBox
+    Friend WithEvents TextBoxCourse As TextBox
     Friend WithEvents TextBoxUniv As TextBox
     Friend WithEvents LabelUniv As Label
     Friend WithEvents LabelGrad As Label
@@ -457,4 +475,5 @@ Partial Class PDFResumeCreator
     Friend WithEvents LabelEmail As Label
     Friend WithEvents ButtonSaveasJSON As Button
     Friend WithEvents ButtonPrintPDF As Button
+    Friend WithEvents ButtonNew As Button
 End Class
